@@ -2,10 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой тестовый сайт на джанго</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background: url('https://wp-s.ru/wallpapers/10/0/430547732901099/neobychajno-krasivyj-pejzazh-na-beregu-okeana-i-s-nabegayushhimi-volnami.jpg') no-repeat center center/cover;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+            text-decoration: none;
+        }
+        .dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .dots span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background: white;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello my </h1>
-
+    <div class="background">
+        <div class="navbar">
+            <div class="logo">Sadykov_DEV</div>
+            <div>
+                <a href="https://cloud.mail.ru/public/6QYj/amX3HaLn2">Скачать резюме</a>
+                <a href="https://github.com/SergeySadykovN">Портфолио</a>
+                <a href="https://t.me/ggbee">Контакты</a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Sergey Sadykov Python Dev</h1>
+            <p>Здесь буду тренироваться делать верстку для своего проекта на Джанго для дипломной работы</p>
+            <a href="https://github.com/SergeySadykovN" class="btn">Смотреть код</a>
+        </div>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </body>
 </html>
